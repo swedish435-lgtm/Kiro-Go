@@ -14,6 +14,6 @@ WORKDIR /app
 COPY --from=builder /app/kiro-api-proxy .
 COPY --from=builder /app/web ./web
 
-EXPOSE 0001
+EXPOSE 8080
 
 CMD ["./kiro-api-proxy"]
